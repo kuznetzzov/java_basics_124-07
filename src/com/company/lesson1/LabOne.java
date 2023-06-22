@@ -11,14 +11,14 @@ public class LabOne {
 
         System.out.println();
         double x = (46 + 10) * (10.0 / 3);
-        System.out.println(x); // 186.66666666666669 , если прописать 10.0, иначе 186.0
+        System.out.println(x); // 186.66666666666669, если прописать 10.0, иначе 186.0
         int y = (29) * (4) * (-15);
         System.out.println(y); // -1740
 
         System.out.println();
 
         int number = 10500;
-        int numberExp = (number / 10) / 10;
+        double numberExp = (number / 10.0) / 10;
         System.out.println(numberExp); // 1050
 
         System.out.println();
@@ -42,15 +42,16 @@ public class LabOne {
 
         System.out.println();
 
-        int b = 0;
-        if (b % 2 == 0) {
-            if(b > 100) {
-                System.out.println("Выход за пределы диапазона");
-            } else {
-                System.out.println("Четное");
-            }
+        System.out.println("Введите число:");
+        int b = scanner.nextInt();
+        if (b > 100) {
+            System.out.println("Выход за пределы диапазона");
         } else {
-            System.out.println("Нечетное");
+            if (b % 2 == 0) {
+                System.out.println("Четное");
+            } else {
+                System.out.println("Нечетное");
+            }
         }
     }
 }
