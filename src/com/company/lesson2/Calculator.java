@@ -50,8 +50,8 @@ public class Calculator {
             return String.valueOf(quotient);
         } else {
             String quoStr = String.valueOf(quotient);
-            String quoRem = String.valueOf(remainder);
-            return quoStr + "." + quoRem;
+            String remStr = String.valueOf(remainder);
+            return quoStr + "." + remStr;
         }
     }
 
@@ -69,8 +69,8 @@ public class Calculator {
             return String.valueOf(quotient);
         } else {
             String quoStr = String.valueOf(quotient);
-            String quoRem = String.valueOf(remainder);
-            return quoStr + "." + quoRem;
+            String remStr = String.valueOf(remainder);
+            return quoStr + "." + remStr;
         }
     }
 
