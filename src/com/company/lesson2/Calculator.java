@@ -46,12 +46,10 @@ public class Calculator {
         LongDivision longDivision = new LongDivision(a / b, a % b);
         long quotient = longDivision.getQuotient();
         long remainder = longDivision.getRemainder();
-        if (remainder == 0L) {
+        if (remainder == 0) {
             return String.valueOf(quotient);
         } else {
-            String quoStr = String.valueOf(quotient);
-            String remStr = String.valueOf(remainder);
-            return quoStr + "." + remStr;
+            return String.valueOf(divide((double) a, b));
         }
     }
 
@@ -68,9 +66,7 @@ public class Calculator {
         if (remainder == 0) {
             return String.valueOf(quotient);
         } else {
-            String quoStr = String.valueOf(quotient);
-            String remStr = String.valueOf(remainder);
-            return quoStr + "." + remStr;
+            return String.valueOf(divide((double) a, b));
         }
     }
 
