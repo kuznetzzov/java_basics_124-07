@@ -1,5 +1,7 @@
 package com.company.lesson1;
 
+import com.company.lesson2.Calculator;
+
 import java.util.Scanner;
 
 public class LabOne {
@@ -53,5 +55,6 @@ public class LabOne {
                 System.out.println("Нечетное");
             }
         }
+
     }
 }
