@@ -13,7 +13,6 @@ public class House {
     }
 
     public void displayHouseInfo() {
-        System.out.println("House Information:");
         System.out.println("Name: " + name);
         System.out.println("Number of Floors: " + numberOfFloors);
         System.out.println("Year Built: " + yearBuilt);

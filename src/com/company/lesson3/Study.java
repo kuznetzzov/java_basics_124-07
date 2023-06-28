@@ -4,7 +4,7 @@ public class Study {
 
     private String course;
 
-    public void printCourse(String course){
+    public void printCourse(String course) {
         System.out.println(course);
     }
 
