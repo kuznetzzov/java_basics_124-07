@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Task5 {
     private Scanner scanner;
 
-
     public Task5() {
         scanner = new Scanner(System.in);
     }
@@ -14,7 +13,6 @@ public class Task5 {
         System.out.print("Введите свой возраст: ");
         return scanner.nextInt();
     }
-
 
     public Scanner getScanner() {
         return scanner;
