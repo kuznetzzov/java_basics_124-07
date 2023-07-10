@@ -10,7 +10,7 @@ public class Task5 {
     }
 
     public int getUserAge() {
-        System.out.print("Введите свой возраст: ");
+        System.out.print("Введите ваш возраст: ");
         return scanner.nextInt();
     }
 
