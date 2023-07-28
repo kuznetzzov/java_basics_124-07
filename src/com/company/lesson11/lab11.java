@@ -16,19 +16,19 @@ public class lab11 {
          * Выведете состояние потока перед его запуском, после запуска и во время
          * выполнения.
          */
-//        for (int i = 1; i <= 10; i++) {
-//            Thread thread = new Thread(new ThreadDeals());
-//            thread.setName("Thread " + i);
-//            System.out.println(thread.getName() + " состояние перед запуском: " + thread.getState());
-//            thread.start();
-//            System.out.println(thread.getName() + " состояние после запуска: " + thread.getState());
-//            try {
-//                Thread.sleep(100); // Приостановка для наблюдения состояния потока
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//            System.out.println(thread.getName() + " состояние в момент исполнения: " + thread.getState());
-//        }
+        for (int i = 1; i <= 10; i++) {
+            Thread thread = new Thread(new ThreadDeals());
+            thread.setName("Thread " + i);
+            System.out.println(thread.getName() + " состояние перед запуском: " + thread.getState());
+            thread.start();
+            System.out.println(thread.getName() + " состояние после запуска: " + thread.getState());
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(thread.getName() + " состояние в момент исполнения: " + thread.getState());
+        }
 
         /**
          * Дан класс:
@@ -67,13 +67,11 @@ public class lab11 {
             threads.add(thread);
             thread.start();
         }
-
         try {
             latch.await();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         System.out.println("count: " + counter.getCount());
 
 
@@ -84,9 +82,9 @@ public class lab11 {
          * цикле свое имя. Потом придется добавить синхронизацию с помощью wait() и
          * notify().
          */
-//        Thread thread1 = new Thread1(threadDeals);
-//        Thread thread2 = new Thread2(threadDeals);
-//        thread1.start();
-//        thread2.start();
+        Thread thread1 = new Thread1(threadDeals);
+        Thread thread2 = new Thread2(threadDeals);
+        thread1.start();
+        thread2.start();
     }
 }
